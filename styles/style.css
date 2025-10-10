@@ -3,7 +3,7 @@
 @import url(./normalize.css) layer(reset);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap") layer(init);
 
-@layer design {
+@layer init {
     :root {
         color-scheme: light dark;
         --header-bg-color: light-dark(#3B3E40, #3B3E40);
@@ -19,9 +19,22 @@
         font-size: 100%; /*  default: 16px  */
         color: var(--text-color);
     }
+}
 
+@layer design {
     body {
         background-color: var(--bg-color);
+    }
+
+    h1 {
+        font-size: 4rem; /* default: 60px */
+        font-weight: extra-bold; /* 800 */
+    }
+
+    main {
+        padding: 1rem;
+        max-width: 960px;
+        margin: 0 auto;
     }
 
     .header {
@@ -31,6 +44,7 @@
         background-color: var(--header-bg-color);
         color: var(--header-text-color);
         line-height: 1.5;
+        padding: 1rem;
     }
 
     .header__nav {
@@ -40,5 +54,56 @@
     .header__link {
         display: inline-block;
         padding-top: 1em;
+    }
+
+    .header__intro {
+        margin-top: 10vh;
+    }
+
+    .button {
+        display: inline-block;
+        border-radius: 0.5rem;
+        padding: 0.75em 2em;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .button--light {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+
+    .img-fluid {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .img-block {
+        margin: 0;
+    }
+
+    .img-block__caption {
+        text-align: center;
+        margin-top: 0.5em;
+    }
+
+    .info-block {
+        margin: 1em 0;
+        padding: 1.5rem;
+        border: 3px solid var(--primary-color)
+    }
+
+    .info-block__title {
+        margin-bottom: 1em;
+    }
+
+    .heading {
+        font-family: "Open Sans", sans-serif; 
+        font-weight: 700;
+    }
+
+    .heading--h3 {
+        font-size: 1.125em;
     }
 }
