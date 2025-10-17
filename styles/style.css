@@ -58,9 +58,8 @@
 
     .header__intro {
         margin-top: 10vh;
-        margin-left: 6rem;
-        margin-bottom: 4rem;
         max-width: 772px;
+        padding: 2rem;
     }
       
     .button {
@@ -88,12 +87,13 @@
     }
 
     .img-block {
-        margin: 0;
+        margin: 3rem 0 3rem 0;
     }
 
     .img-block__caption {
         text-align: center;
-        margin-top: 0.5em;
+        margin-top: 1rem;
+        font-size: 14px;
     }
 
     .info-block {
@@ -118,10 +118,10 @@
     .card-container {
         display: flex;
         margin-bottom: 3em;
+        gap: 3rem;
     }
 
     .card {
-        padding: 1.5rem;
         margin: 0;
         width: 300px;
     }
@@ -135,6 +135,7 @@
         background-color: #3B3E40;
         text-align: center;
         padding: 3rem;
+        margin-bottom: 5em;
     }
 
     .gray-box__title {
@@ -150,5 +151,56 @@
 
     .gray-box__desc {
         color: #FFFFFF;
+    }
+
+    .gallery__big__image {
+        width: 100%;
+    }
+
+    .gallery__big {
+        margin-bottom: 0.5rem;
+    }
+
+    .gallery__small {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 3em;
+    }
+
+    .gallery__small__image {
+        width: calc(50% - 0.5rem);
+        height: auto;
+    }
+
+    .footer {
+        background-color: #3B3E40;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 2em;
+    }
+
+    .main__title {
+        align-self: stretch;
+        font-size: 36px;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .rezimy {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .cards__title {
+        font-size: 36px;
+    }
+
+    .gallery__title {
+        font-size: 36px;
+    }
+
+    li::marker {
+        color: var(--primary-color)
     }
 }
