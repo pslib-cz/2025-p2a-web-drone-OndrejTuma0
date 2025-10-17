@@ -53,13 +53,16 @@
 
     .header__link {
         display: inline-block;
-        padding-top: 1em;
+        padding-top: 2em;
     }
 
     .header__intro {
         margin-top: 10vh;
+        margin-left: 6rem;
+        margin-bottom: 4rem;
+        max-width: 772px;
     }
-
+      
     .button {
         display: inline-block;
         border-radius: 0.5rem;
@@ -114,6 +117,7 @@
 
     .card-container {
         display: flex;
+        margin-bottom: 3em;
     }
 
     .card {
@@ -130,7 +134,7 @@
     .gray-box {
         background-color: #3B3E40;
         text-align: center;
-        padding: 3em;
+        padding: 3rem;
     }
 
     .gray-box__title {
