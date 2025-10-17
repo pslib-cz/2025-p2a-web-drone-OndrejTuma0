@@ -130,9 +130,21 @@
     .gray-box {
         background-color: #3B3E40;
         text-align: center;
+        padding: 3em;
     }
 
     .gray-box__title {
-        
+        font-size: 50px;
+        color: #FFFFFF;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .gray-box__max {
+        font-size: 100px;
+    }
+
+    .gray-box__desc {
+        color: #FFFFFF;
     }
 }
